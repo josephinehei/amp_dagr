@@ -2,6 +2,7 @@ package com.example.dagr;
 
 import android.os.Bundle;
 
+import com.google.android.gms.maps.model.LatLng;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
@@ -17,6 +18,10 @@ import com.example.dagr.ui.main.SectionsPagerAdapter;
 import com.example.dagr.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
+
+    static final LatLng CHEYENNE = new LatLng(41.1400, -104.8197);  //Note, West is a negative, East is positive
+    static final LatLng KIEL = new LatLng(53.551, 9.993);
+    static final LatLng LARAMIE = new LatLng(41.312928, -105.587253);
 
     private ActivityMainBinding binding;
 
@@ -34,12 +39,12 @@ public class MainActivity extends AppCompatActivity {
         tabs.setupWithViewPager(viewPager);
         FloatingActionButton fab = binding.fab;
 
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//            }
+//        });
     }
 }

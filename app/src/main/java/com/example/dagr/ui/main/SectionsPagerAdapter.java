@@ -8,7 +8,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
+import com.example.dagr.JulianDateFrag;
+import com.example.dagr.MapFrag;
 import com.example.dagr.R;
+import com.example.dagr.RadioFrag;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
@@ -27,9 +30,18 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        // getItem is called to instantiate the fragment for the given page.
-        // Return a PlaceholderFragment (defined as a static inner class below).
-        return PlaceholderFragment.newInstance(position + 1);
+        Fragment fragment = null;
+        switch(position) {
+            case 0:
+                fragment = RadioFrag.newInstance();
+                break;
+            case 1:
+                fragment = JulianDateFrag.newInstance();
+                break;
+            case 2:
+                fragment = MapFrag.newInstance();
+        }
+        return fragment;
     }
 
     @Nullable
