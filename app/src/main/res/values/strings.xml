@@ -8,4 +8,5 @@
     <string name="fill">Fill:</string>
     <string name="fill_text">123</string>
     <string name="map_fragment">MAP FRAGMENT</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>

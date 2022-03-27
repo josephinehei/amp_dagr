@@ -36,7 +36,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
                 fragment = JulianDateFrag.newInstance();
                 break;
             case 2:
-                fragment = MapFrag.newInstance();
+                fragment = MapsActivity.newInstance();
         }
         return fragment;
     }
