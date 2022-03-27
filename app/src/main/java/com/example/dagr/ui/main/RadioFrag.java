@@ -1,7 +1,5 @@
-package com.example.dagr;
+package com.example.dagr.ui.main;
 
-
-import android.icu.util.Calendar;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,13 +7,14 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
+import com.example.dagr.R;
 
-public class JulianDateFrag extends Fragment {
+public class RadioFrag extends Fragment {
 
-    public JulianDateFrag(){}
+    public RadioFrag(){}
 
-    public static JulianDateFrag newInstance() {
-        JulianDateFrag fragment = new JulianDateFrag();
+    public static RadioFrag newInstance() {
+        RadioFrag fragment = new RadioFrag();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
@@ -29,12 +28,8 @@ public class JulianDateFrag extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_main, container, false);
-
-        Calendar cal = Calendar.getInstance();
-        cal.get(Calendar.DAY_OF_YEAR);
+        View view = inflater.inflate(R.layout.fragment_radio, container, false);
 
         return view;
     }
 }
-

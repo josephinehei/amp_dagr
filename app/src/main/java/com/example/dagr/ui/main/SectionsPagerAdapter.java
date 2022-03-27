@@ -8,10 +8,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.dagr.JulianDateFrag;
-import com.example.dagr.MapFrag;
 import com.example.dagr.R;
-import com.example.dagr.RadioFrag;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
