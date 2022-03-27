@@ -38,7 +38,7 @@ public class MapFrag extends Fragment {
 //        } else {
 //            ((ViewGroup) container.getParent()).removeView(myView);
 //        }
-        View view = inflater.inflate(R.layout.fragment_main, container, false);
+        View view = inflater.inflate(R.layout.fragment_map, container, false);
 
 //        ((SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map)).getMapAsync(this);
         return view;
