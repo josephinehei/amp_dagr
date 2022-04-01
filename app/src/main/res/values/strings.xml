@@ -1,8 +1,7 @@
 <resources>
     <string name="app_name">DAGR</string>
     <string name="tab_text_1">Fill a Radio</string>
-    <string name="tab_text_2">Julian Date</string>
-    <string name="tab_text_3">Map</string>
+    <string name="tab_text_2">Map</string>
     <string name="julian_date">1</string>
     <string name="julian_date_title">Julian Date:</string>
     <string name="fill">Fill:</string>

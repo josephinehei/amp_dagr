@@ -24,4 +24,24 @@
         android:text="@string/fill_text"
         app:layout_constraintStart_toEndOf="@+id/radio_fill_title"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/julianDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/julian_date"
+        app:layout_constraintStart_toEndOf="@+id/julianDateTitle"
+        app:layout_constraintTop_toBottomOf="@+id/radio_fill" />
+
+    <TextView
+        android:id="@+id/julianDateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/julian_date_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_fill_title" />
 </androidx.constraintlayout.widget.ConstraintLayout>
