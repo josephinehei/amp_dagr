@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.example.dagr.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -55,6 +56,32 @@ public class MapsActivity extends Fragment {
             @Override
             public void onMapReady(GoogleMap mMap) {
                 googleMap = mMap;
+
+                googleMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
+
+                    @Override
+                    public void onMapClick(LatLng latLng) {
+
+                        // Creating a marker
+                        MarkerOptions markerOptions = new MarkerOptions();
+
+                        // Setting the position for the marker
+                        markerOptions.position(latLng);
+
+                        // Setting the title for the marker.
+                        // This will be displayed on taping the marker
+                        markerOptions.title(latLng.latitude + " : " + latLng.longitude);
+
+                        // Clears the previously touched position
+                        googleMap.clear();
+
+                        // Animating to the touched position
+                        googleMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
+
+                        // Placing a marker on the touched position
+                        googleMap.addMarker(markerOptions);
+                    }
+                });
 
 //                // For showing a move to my location button
 //                if (ActivityCompat.checkSelfPermission(this,
